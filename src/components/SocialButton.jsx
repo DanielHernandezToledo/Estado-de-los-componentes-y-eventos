@@ -1,8 +1,6 @@
-import facebook from '../../public/icons/facebook.png'
-import github from '../../public/icons/github.png'
-import linkedin from '../../public/icons/linkedin.png'
+/* Recibiendo iconos mediante props desde el componente Registro */
 
-export default function SocialButton(){
+export default function SocialButton({facebook, github, linkedin}){
 
     const tamaño = {width: '40px'}
 
