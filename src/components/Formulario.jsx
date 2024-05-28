@@ -42,58 +42,71 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
     }
 
     // Si todas las validaciones pasan
+
     setAlertMessage("Registro exitoso.");
     setAlertVariant("success");
+
+    setNombre('')
+    setEmail('')
+    setPassword('')
+    setConfirmPassword('')
+
+
+
+
   };
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Form.Group controlId="formNombre">
-        <Form.Label>Nombre</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Ingrese su nombre"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-        />
-      </Form.Group>
+      <div className="mx-4">
+        <Form.Group controlId="formNombre">
+          <Form.Label>Nombre</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ingrese su nombre"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="formEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Ingrese su email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </Form.Group>
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Ingrese su email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="formPassword">
-        <Form.Label>Contraseña</Form.Label>
-        <Form.Control
-          type="password"
-          placeholder="Ingrese su contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </Form.Group>
+        <Form.Group controlId="formPassword">
+          <Form.Label>Contraseña</Form.Label>
+          <Form.Control
+            type="password"
+            placeholder="Ingrese su contraseña"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="formConfirmPassword">
-        <Form.Label>Confirmar Contraseña</Form.Label>
-        <Form.Control
-          type="password"
-          placeholder="Confirme su contraseña"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-        />
-      </Form.Group>
+        <Form.Group controlId="formConfirmPassword">
+          <Form.Label>Confirmar Contraseña</Form.Label>
+          <Form.Control
+            type="password"
+            placeholder="Confirme su contraseña"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+        </Form.Group>
 
-      <Button
-        variant="primary"
-        type="submit"
-      >
-        Registrarse
-      </Button>
+        <Button
+          variant="success w-100 my-3"
+          type="submit"
+        >
+          Registrarse
+        </Button>
+      </div>
+
     </Form>
   );
 };
