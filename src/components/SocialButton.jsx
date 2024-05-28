@@ -3,7 +3,7 @@
 export default function SocialButton({facebook, github, linkedin}){
 
     const tamaño = {width: '60px'}
-    const estilosIconos = 'p-2 border rounded-black rounded-circle'
+    const estilosIconos = 'p-2 border rounded-black rounded-circle' /* Estilos de iconos */
 
     return(
         <>

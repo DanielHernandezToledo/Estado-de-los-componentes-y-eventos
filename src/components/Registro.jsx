@@ -6,7 +6,7 @@ import SocialButton from "./SocialButton";
 import Formulario from "./Formulario";
 import Alert from "./Alert";
 
-//Importanto iconos
+//Importando iconos
 import facebook from '/icons/facebook.png';
 import github from '/icons/github.png';
 import linkedin from '/icons/linkedin.png';

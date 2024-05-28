@@ -46,6 +46,7 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
     setAlertMessage("Registro exitoso.");
     setAlertVariant("success");
 
+    // Limpieza de input
     setNombre('')
     setEmail('')
     setPassword('')
