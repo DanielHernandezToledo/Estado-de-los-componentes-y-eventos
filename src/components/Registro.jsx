@@ -1,13 +1,15 @@
 // Importando los componentes al componente Registro.jsx
+
+import { useState } from "react";
+
 import SocialButton from "./SocialButton";
+import Formulario from "./Formulario";
+import Alert from "./Alert";
 
-/* Importando Iconos */
-import facebook from '../../public/icons/facebook.png'
-import github from '../../public/icons/github.png'
-import linkedin from '../../public/icons/linkedin.png'
+const Registro = () => {
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertVariant, setAlertVariant] = useState("");
 
-
-export default function Registro() {
   return (
     <div
       className="card"
@@ -15,12 +17,19 @@ export default function Registro() {
     >
       <h1 className="text-primary text-center">Crear una cuenta</h1>
       <div className="d-flex justify-content-evenly gap-2">
-        <SocialButton 
-          facebook={facebook}
-          github={github}
-          linkedin={linkedin}
+        <SocialButton />
+        <Formulario
+          setAlertMessage={setAlertMessage}
+          setAlertVariant={setAlertVariant}
         />
+        {alertMessage && (
+          <Alert
+            message={alertMessage}
+            variant={alertVariant}
+          />
+        )}
       </div>
     </div>
   );
-}
+};
+export default Registro;
