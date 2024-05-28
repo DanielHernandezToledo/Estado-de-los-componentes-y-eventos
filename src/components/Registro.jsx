@@ -1,10 +1,10 @@
 // Importando los componentes al componente Registro.jsx
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 import SocialButton from "./SocialButton";
 import Formulario from "./Formulario";
-import Alert from './Alert';
+import Alert from "./Alert";
 
 const Registro = () => {
   const [alertMessage, setAlertMessage] = useState("");

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Registro from './components/Registro';
 
 // Componente principal de la aplicación
