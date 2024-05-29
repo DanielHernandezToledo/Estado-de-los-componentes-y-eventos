@@ -1,3 +1,7 @@
+
+// Se crean 4 componentes: Registro, SocialButton, Formulario y Alert
+// El componente Registro importa todos los demás componentes.
+
 // Importando los componentes al componente Registro.jsx
 
 import { useState } from "react";
