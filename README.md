@@ -4,9 +4,7 @@
 
         ![Presentación Página Web](./public/images/paginaWeb.png)
 
-<br/>
-
----
+## <br/>
 
 <br/>
 
