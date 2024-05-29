@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
+// Componente que tiene un Formulario con un campo para el nombre, email, contraseña y
+// otro para la confirmación de la contraseña del usuario, donde se almacenan los estados
+// de los inputs a través de useState y se relacionan con el evento onChange.
+
 const Formulario = ({ setAlertMessage, setAlertVariant }) => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
@@ -47,20 +51,17 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
     setAlertVariant("success");
 
     // Limpieza de input
-    setNombre('')
-    setEmail('')
-    setPassword('')
-    setConfirmPassword('')
-
-
-
-
+    setNombre("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
   };
 
   return (
     <Form onSubmit={handleSubmit}>
       <div className="mx-4">
         <Form.Group controlId="formNombre">
+          <br></br>
           <Form.Label>Nombre</Form.Label>
           <Form.Control
             type="text"
@@ -71,6 +72,7 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
         </Form.Group>
 
         <Form.Group controlId="formEmail">
+          <br></br>
           <Form.Label>Email</Form.Label>
           <Form.Control
             type="email"
@@ -81,6 +83,7 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
         </Form.Group>
 
         <Form.Group controlId="formPassword">
+          <br></br>
           <Form.Label>Contraseña</Form.Label>
           <Form.Control
             type="password"
@@ -91,6 +94,7 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
         </Form.Group>
 
         <Form.Group controlId="formConfirmPassword">
+          <br></br>
           <Form.Label>Confirmar Contraseña</Form.Label>
           <Form.Control
             type="password"
@@ -107,7 +111,6 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
           Registrarse
         </Button>
       </div>
-
     </Form>
   );
 };
