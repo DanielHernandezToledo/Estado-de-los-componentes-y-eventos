@@ -1,4 +1,4 @@
-# Módulo 4 REACT I - Estado de los Componentes y Eventos - React + Vite
+# Módulo 4 REACT I - Desafío 2 - Estado de los Componentes y Eventos - React + Vite
 
 ## Presentación Página Web
 
