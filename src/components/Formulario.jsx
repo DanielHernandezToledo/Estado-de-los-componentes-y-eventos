@@ -50,6 +50,11 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
     setAlertMessage("Registro exitoso.");
     setAlertVariant("success");
 
+    setTimeout(() => {
+      setAlertMessage("");
+      setAlertVariant("");
+    }, 3000)
+
     // Limpieza de input
     setNombre("");
     setEmail("");
