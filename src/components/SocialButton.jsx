@@ -7,9 +7,9 @@ export default function SocialButton({facebook, github, linkedin}){
 
     return(
         <>
-            <a href="www.facebook.com"><img src={facebook} alt="Facebook" style={tamaño} className={estilosIconos}/></a>
-            <a href="www.github.com"><img src={github} alt="Github" style={tamaño} className={estilosIconos}/></a>
-            <a href="www.linkedin.com"><img src={linkedin} alt="Linkedin" style={tamaño} className={estilosIconos}/></a>
+            <a href="https://www.facebook.com"><img src={facebook} alt="Facebook" style={tamaño} className={estilosIconos}/></a>
+            <a href="https://www.github.com"><img src={github} alt="Github" style={tamaño} className={estilosIconos}/></a>
+            <a href="https://www.linkedin.com"><img src={linkedin} alt="Linkedin" style={tamaño} className={estilosIconos}/></a>
         </>
     )
 }
