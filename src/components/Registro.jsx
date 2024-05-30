@@ -1,4 +1,3 @@
-
 // Se crean 4 componentes: Registro, SocialButton, Formulario y Alert
 // El componente Registro importa todos los demás componentes.
 
@@ -11,24 +10,20 @@ import Formulario from "./Formulario";
 import Alert from "./Alert";
 
 //Importando iconos
-import facebook from '/icons/facebook.png';
-import github from '/icons/github.png';
-import linkedin from '/icons/linkedin.png';
+import facebook from "/icons/facebook.png";
+import github from "/icons/github.png";
+import linkedin from "/icons/linkedin.png";
 
 const Registro = () => {
   const [alertMessage, setAlertMessage] = useState("");
   const [alertVariant, setAlertVariant] = useState("");
 
-
-
   return (
-
-
     <div className="vh-100 d-flex justify-content-center align-items-center">
       <div>
         <div
           className="card"
-          style={{ width:"24rem" }}
+          style={{ width: "24rem" }}
         >
           <div className="card-body">
             <h1 className="text-center">Crear una cuenta</h1>
@@ -39,6 +34,8 @@ const Registro = () => {
                 linkedin={linkedin}
               />
             </div>
+            <br />
+            <h6 className="text-center">O usa tu email para registrarte</h6>
             <Formulario
               setAlertMessage={setAlertMessage}
               setAlertVariant={setAlertVariant}
@@ -52,9 +49,7 @@ const Registro = () => {
           </div>
         </div>
       </div>
-
     </div>
-
   );
 };
 export default Registro;

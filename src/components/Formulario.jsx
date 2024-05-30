@@ -53,7 +53,7 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
     setTimeout(() => {
       setAlertMessage("");
       setAlertVariant("");
-    }, 3000)
+    }, 3000);
 
     // Limpieza de input
     setNombre("");
@@ -81,7 +81,7 @@ const Formulario = ({ setAlertMessage, setAlertVariant }) => {
           <Form.Label>Email</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Ingrese su email"
+            placeholder="Ingrese su email: tuemail@ejemplo.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
